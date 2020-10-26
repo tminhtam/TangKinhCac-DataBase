@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteRule "index.html" "index.php"
+RewriteRule "hot" "index.php?q=hot"
+RewriteRule "truyen-dich" "index.php?q=dich"
+RewriteRule "convert" "index.php?q=convert"
+RewriteRule "login" "index.php?q=login"
+RewriteRule "update" "index.php?q=update"
+RewriteRule "books" "index.php?q=books"
+RewriteRule "full" "index.php?q=full"
+RewriteRule "^the-loai/(.*)$" "index.php?q=tl&t=$1"
+RewriteRule "^tac-gia/(.*)$" "index.php?q=author&t=$1"
+RewriteRule "^truyen/(.*)/(.*)$" "index.php?q=truyen&id=$1&t=$2"
+RewriteRule "^doc-truyen/(.*)/(.*)/(.*)$" "index.php?q=read&id=$1&t=$2&idChuong=$3"
